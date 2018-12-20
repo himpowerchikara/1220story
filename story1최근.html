@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>story</title>
+	 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<style type="text/css">
+	*{margin-top:0; margin-left:0; margin-right:0;  overflow-x:hidden; overflow-y:hidden;}
+  a:link{color: brown; text-decoration: none;}
+  a:visited{color: brown; text-decoration: none;}
+
+	#house{z-index:19;width:100%; height:100%; transition:all 1s; transition-delay:1s; position:absolute; left:0%; top:0%;}
+	#cloud{z-index:20; width:100%; height:100%; transition:all 1s; transition-delay:0.5s;position:absolute; left:-5%; top:0%; animation:cl 20s infinite;  animation-fill-mode:both}
+       @keyframes cl{
+                       0%{ margin-left:0px; }
+                50%{ margin-left:200px; }
+                100%{ margin-left:0px; }
+                        }
+
+	#grass{z-index:20; width:110%; height:130%; transition:all 1s; position:absolute; left:0%; top:-10%; animation:gr 1s infinite;  animation-fill-mode:both}
+       @keyframes gr{
+                       0%{ margin-left:-5px; }
+                50%{ margin-left:0px; }
+                100%{margin-left:-5px; }
+                        }
+
+
+  #box {width:0px; height:70px; position:absolute; transition:all 1s;
+  top:5%; left:2%; font-size: 0px; background-color: black; transition:all 1s; z-index:20; opacity:0.5;}
+
+     #ftext {width:350px; position:absolute;
+  top:5%; left:4%; font-size: 0px; color:white; transition:all 1s; z-index:20; cursor: pointer;}
+
+
+
+
+
+/*1*/
+
+
+
+
+
+#havanba{z-index:15;width:100%; height:100%; transition:all 0.5s; position:absolute; left:0%; top:0%;}
+	#havan{z-index:17;width:100%; height:100%; transition:all 0.5s; position:absolute; left:0%; top:0%;}
+	#rightarm{z-index:16; width:100%; height:100%; transition:all 0.5s; position:absolute; left:0%; top:-2%; animation:ra 3s infinite;  animation-fill-mode:both;
+		animation-play-state:paused;
+	}
+       @keyframes ra{
+                       0%{ margin-top:0px; }
+                50%{ margin-top:20px; }
+                100%{ margin-top:0px; }
+                        }
+
+	#leftarm{z-index:18; width:100%; height:100%; transition:all 0.5s; position:absolute; left:0%; top:-2%; animation:la 3s infinite;  animation-fill-mode:both;
+	animation-play-state:paused;}
+       @keyframes la{
+                       0%{ margin-top:0px; }
+                50%{ margin-top:20px; }
+                100%{margin-top:0px; }
+                        }
+
+
+  #boxx {width:0px; height:150px; transition:all 0.5s; position:absolute; 
+  top:5%; left:5%;  background-color: black; animation:bxx 0.5s linear; animation-delay: 1s; z-index:18; opacity:0.5;  animation-fill-mode:both; animation-play-state:paused;}
+   @keyframes bxx{
+                       0%{width:0px; }
+                100%{width:400px; }
+                        }
+
+     #stext {width:300px; position:absolute; transition:all 0.5s;
+  top:10%; left:7%; font-size: 0px; color:white; z-index:18; cursor: pointer; animation:st 0.5s linear;  animation-fill-mode:both; 
+animation-play-state:paused;}
+   @keyframes st{
+                       0%{font-size:0px; }
+                100%{font-size:30px; }
+                        }
+
+
+
+
+/*2*/
+
+
+#cry{z-index:14; width:110%; height:110%; position:absolute;  top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  animation:sim 3s infinite;  }
+       @keyframes sim{
+                       0%{top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+
+                50%{top: 50.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+
+                100%{ top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);}
+                        }
+
+	#bro{z-index:14; width:100%; height:100%; position:absolute; top:5%; right:50%; animation:br 8s linear;  animation-fill-mode:both; opacity:0;  animation-play-state:paused;}
+       @keyframes br{
+                       0%{ width:0%; height:0%; opacity:0; position:absolute; top:5%; right:40%; z-index:14;}
+                60%{ width:100%; height:100%; opacity:1; position:absolute; top:5%; right:0%; z-index:14;}
+                90%{width:200%; height:200%; opacity:0; position:absolute; top:0%; right:-40%; z-index:14;}
+                        
+                        100%{width:200%; height:200%; opacity:0; position:absolute; top:0%; right:-40%; z-index:-200;}
+                        }
+
+
+  #box3 {width:0px; height:250px; position:absolute;
+  top:20%; left:5%;  background-color: black; animation:bxx 1s linear; z-index:14; opacity:0.5;  animation-fill-mode:both; animation-delay:2s;
+  animation-play-state:paused; }
+   @keyframes bxx{
+                       0%{width:0px; }
+                100%{width:400px; }
+                        }
+
+     #thitext {width:300px; position:absolute;
+  top:22%; left:8%; font-size: 0px; color:white;  z-index:14; cursor: pointer; animation:st 1s linear;  animation-fill-mode:both; 
+  animation-delay:2s; animation-play-state:paused;}
+   @keyframes st{
+                       0%{font-size:0px; }
+                100%{font-size:20px;}
+                        }
+
+                        #thitexttwo {width:800px; position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size: 40px; color:white;  z-index:14; cursor: pointer; animation:stt 1s linear;  animation-fill-mode:both; 
+   animation-play-state:paused; }
+   @keyframes stt{
+                       0%{opacity: 0; }
+                100%{opacity: 1;}
+                        }
+
+
+
+/*3*/
+
+
+#cpblack{z-index:13; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:3s; }
+
+	#cp{z-index:13; width:100%; height:100%; position:absolute; top:0%; right:0%;  transition:all 4s; }
+   
+   #cpback{z-index:10; width:100%; height:100%; position:absolute; left:0%; top:0%; transition: 1s;}
+
+     #onestar{z-index:11; width:120%; height:120%; position:absolute; left:-120%; top:-5%; transition: 3s; transition-delay:4s;  animation:ones 2s linear; animation-delay: 4s; animation-play-state:paused; animation-fill-mode:both; opacity: 0; }
+   @keyframes ones{
+                       0%{opacity: 0; }
+                100%{opacity: 1;}
+                        }
+
+
+
+ 
+
+     #fourtext {width:300px; position:absolute;
+   top: 47%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size: 40px; text-align:center; color:white; transition:all 1s; z-index:13;  animation:fourtext 3s linear;  animation-play-state:paused;  animation-fill-mode:both; opacity: 1;
+}
+   @keyframes fourtext{
+                       0%{opacity: 0; }
+                60%{opacity: 1;}
+                100%{opacity: 0;}
+                        }
+
+#box4 {width:350px; height:100px; position:absolute;
+  top:25%; left:63%;  background-color:black; transition:all 1s; z-index:13;   animation:boxfour 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:1s;  opacity: 0.5;
+}
+   @keyframes boxfour{
+                       0%{width: 0px;}
+                100%{width:350px;}
+                        }
+
+
+                         #fourtexttwo {width:300px; position:absolute;
+  top:25%; left:65%; font-size: 0px; color:white; transition:all 1s; z-index:13;  cursor: pointer;  animation:fourtexttwo 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:1s;  opacity: 1;
+}
+   @keyframes fourtexttwo{
+                       0%{font-size: 0px;}
+                100%{font-size: 20px;}
+                        }
+
+                         #pheal {width:100%; height:100%; position:absolute;top:0%; left:0%;   transition:all 0.5s; z-index:-200; opacity: 0;  animation:phph 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; }
+                         @keyframes phph{
+                       0%{filter:blur(0px);}
+                100%{filter:blur(10px);}
+                        }
+
+                        
+ #fourtextthr {width:300px; position:absolute;
+  top:35%; left:15%; font-size: 0px; color:white; transition:all 6s; z-index:13;  cursor: pointer;  animation:fourtextthr 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:1s;  opacity: 1;
+}
+   @keyframes fourtextthr{
+                       0%{font-size: 0px;}
+                100%{font-size: 20px;}
+                        }
+
+                        #box42 {width:350px; height:100px; position:absolute;
+  top:35%; left:13%;  background-color:black; transition:all 6s; z-index:13;   animation:boxfourtwo 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:1s;  opacity: 0.5;
+}
+   @keyframes boxfourtwo{
+                       0%{width: 0px;}
+                100%{width:350px;}
+                        }
+ 
+
+
+  #usa{z-index:11; width:100%; height:100%; position:absolute; top:0%; left:120%;  transition:all 2s; transition-delay: 0s;}
+   #usa2{z-index:11; width:100%; height:100%; position:absolute; top:0%; left:120%;  transition:all 2s; transition-delay: 1s;}
+    #usa3{z-index:12; width:100%; height:100%; position:absolute; top:0%; left:120%;  transition:all 2s; transition-delay: 2s;}
+    #poseter{z-index:11; width:0%; height:0%; position:absolute; top:0%; left:20%;  transition:all 1s;  animation:pos 0.5s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:4s;}
+       @keyframes pos{
+                       0%{ width:0%; height:0%;}
+                100%{ width:50%; height:100%; transform:rotate3D(2000,2000,2000,720deg);}
+                        }
+ #brain{z-index:13; width:100%; height:100%; position:absolute; top:0%; left:120%;  transition:all 1.5s; transition-delay: 5s;}
+
+  #fourtextfr {width:300px; position:absolute;
+  top:55%; left:15%; font-size: 0px; color:white; transition:all 1s; z-index:13;  cursor: pointer;  animation:fourtextfr 2s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:6s;  opacity: 1;
+}
+   @keyframes fourtextfr{
+                       0%{font-size: 0px;}
+                100%{font-size: 20px;}
+                        }
+
+                        #box43 {width:350px; height:150px; position:absolute;
+  top:55%; left:13%;  background-color:black; transition:all 2s; z-index:13;   animation:boxfourthr 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:6s;  opacity: 0.5;
+}
+   @keyframes boxfourthr{
+                       0%{width: 0px;}
+                100%{width:350px;}
+                        }
+
+ #soldiers{z-index:11; width:100%; height:100%; position:absolute; left:0%; top:0%; animation:soldiers 8s linear; animation-play-state:paused;  
+  animation-fill-mode:both;   opacity: 0;}
+   @keyframes soldiers{
+                       0%{position:absolute; left:0%; top:0%; width:100%; height:100%;  opacity: 0;}
+                60%{position:absolute; left:40%; top:25%; width:40%; height:40%;  opacity: 1;}
+                100%{position:absolute; left:45%; top:35%; width:20%; height:20%;  opacity: 0;}
+                        }
+
+                        #fourtextfive {width:300px; position:absolute;
+  top:50%; left:15%; font-size: 0px; color:white; transition:all 3s; z-index:13;  cursor: pointer;  animation:fourtextfive 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:3s;  opacity: 1;
+}
+   @keyframes fourtextfive{
+                       0%{font-size: 0px;}
+                100%{font-size: 20px;}
+                        }
+
+                        #box44 {width:350px; height:150px; position:absolute;
+  top:50%; left:13%;  background-color:black; transition:all 3s; z-index:13;   animation:boxfourfour 1s linear; animation-play-state:paused;  
+  animation-fill-mode:both; animation-delay:3s;  opacity: 0.5;
+}
+   @keyframes boxfourfour{
+                       0%{width: 0px;}
+                100%{width:350px;}
+                        }
+
+/*4*/
+
+ #blackfive{z-index:8; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:1s;}
+
+  #startziz{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:-120%; transition:1s; transition-delay:1.5s; animation:statozz 0.4s infinite; 
+  animation-fill-mode:both;  animation-play-state: paused; opacity: 1;
+}
+   @keyframes statozz{
+                       0%{position:absolute; left:0%; top:-120%;}
+                50%{position:absolute; left:40%; top:40%;}
+                100%{position:absolute; left:0%; top:-20%;}
+                        }
+
+  #startzizz{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:-120%; transition:1s; transition-delay:1.5s; animation:statozzz 0.3s infinite; 
+  animation-fill-mode:both;  animation-play-state: paused; opacity: 0.5;
+}
+   @keyframes statozzz{
+                       0%{position:absolute; left:0%; top:40%;}
+                50%{position:absolute; left:40%; top:-20%;}
+                100%{position:absolute; left:0%; top:-120%;}
+                        }
+
+
+  #start{z-index:9; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.5s; transition-delay:2s; animation:stato 3s infinite; 
+  animation-fill-mode:both;  animation-play-state: paused; opacity: 0;
+  cursor: pointer;
+}
+   @keyframes stato{
+                       0%{filter:blur(0px);}
+                50%{filter:blur(5px)}
+                100%{filter:blur(0px);}
+                        }
+
+
+   #running{z-index:9; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.5s;}  
+  
+
+  #wind{z-index:9; width:3000px; height:100%; position:absolute; left:0%; top:0%; transition: all 1s; animation:wind 30s linear; 
+  animation-fill-mode:both; animation-play-state: paused; opacity: 1;}  
+  @keyframes wind{
+                       0%{margin-left:-1000px;}
+                100%{margin-left:0px;}
+                        }
+  
+#fivetext {width:700px; position:absolute;
+    top: 8%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); color:white; transition:all 1s; z-index:9;  cursor: pointer;  animation:fivetext 3s linear; 
+  animation-fill-mode:both; animation-delay:1s; animation-play-state: paused; opacity: 1;
+}
+   @keyframes fivetext{
+                       0%{font-size: 0px;}
+                100%{font-size: 20px;}
+                        }
+
+                        #f {width:700px; position:absolute;
+  top:-120%; left:50%; font-size: 0px; color:white; transition:all 1s; z-index:9;  cursor: pointer;  animation:f 1s linear; 
+  animation-fill-mode:both; animation-delay:1.7s; animation-play-state: paused; opacity: 0;
+}
+   @keyframes f{
+                       0%{font-size: 0px;}
+                        90%{font-size: 0px;}
+                100%{font-size: 250px; position:absolute;
+  top:20%; left:40%; z-index: 100;}
+                        }
+
+ #onecar1{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.3s;  animation:oc 1s linear; 
+  animation-fill-mode:both;  animation-play-state: paused; opacity: 1;
+} 
+ @keyframes oc{
+                  0%{z-index: 7;}
+                  50%{z-index: 100;}
+                100%{z-index: -100;}
+              }
+                      
+
+ #onecar2{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.3s; animation:occ 1s linear; 
+  animation-fill-mode:both; animation-delay:0.1s; animation-play-state: paused; opacity: 1;
+} 
+ @keyframes occ {
+  0%{z-index: 7;}
+   50%{z-index: 100;}
+                100%{z-index: -100;}
+              }
+
+ #onecar3{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.3s; animation:occc 1s linear; 
+  animation-fill-mode:both; animation-delay:0.3s; animation-play-state: paused; opacity: 1;
+} 
+ @keyframes occc {
+  0%{z-index: 7;}
+   50%{z-index: 100;}
+                100%{z-index: -100;}
+              }
+
+ #onecar4{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.3s; animation:occcc 1s linear; 
+  animation-fill-mode:both; animation-delay:0.5s; animation-play-state: paused; opacity: 1;
+} 
+ @keyframes occcc {
+   0%{z-index: 7;}
+   50%{z-index: 100;}
+                100%{z-index: -100;}
+              }
+
+ #onecar5{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.3s; animation:od 1s linear; 
+  animation-fill-mode:both; animation-delay:0.7s; animation-play-state: paused; opacity: 1;
+} 
+ @keyframes od {
+    0%{z-index: 7;}
+   50%{z-index: 100;}
+                100%{z-index: -100;}
+              }
+
+ #onecar6{z-index:7; width:100%; height:100%; position:absolute; left:0%; top:0%; transition:0.5s; animation:odd 0.8s linear; 
+  animation-fill-mode:both; animation-delay: 0.9s; animation-play-state: paused; opacity: 0.8;
+} 
+ @keyframes odd {
+    0%{z-index: 7;}
+                20%{z-index: 10;}
+                100%{position:absolute; left:0%; top:-120%}
+              }
+
+ 
+ html{font-family: 'Noto Sans KR', sans-serif;}
+</style>
+</head>
+
+<body>
+
+	
+<img id = house src="집.png">
+<img id = grass src="풀.png">
+<img id = cloud src="구름.png">
+<div id ="box"></div>
+
+<div id= "ftext"> 1932년 미국 </div>
+
+<img id = havan src="하반신.png">
+<img id = leftarm src="왼팔.png">
+<img id = rightarm src="오른팔.png">
+<img id = havanba src="하반배경.png">
+<div id ="boxx"></div>
+
+<div id= "stext"> 나는 인생에 있어서 큰 다짐을 하게 된다. </div>
+
+
+
+<img id = cry src="흑흑.png">
+<img id = bro src="형쓰러짐.png">
+
+<div id ="box3"></div>
+
+<div id= "thitext"> 형과 다툼중 홧김에 액자로 머리를 강타했다. 형은 생명에 지장은
+없었으나, 그 당시 형의 피를 보고 내가 느낀 감정은 정말 미안하고 나는 정말 인간쓰레기
+라는 자책성 감정이 컸다. </div>
+
+
+<div id= "thitexttwo"> "...나는 반드시 누구든 살리는 일을 하겠어...!" </div>
+</div>
+
+
+
+
+
+<img id = cp src="연인.png">
+<img id = cpback src="연인배경.png">
+
+
+<img id = cpblack src="검정.png">
+=
+<img id = pheal src="진주만.jpg">
+<img id = brain src="고뇌.png">
+<img id = usa src="성조기1.png">
+<img id = usa2 src="성조기2.png">
+<img id = usa3 src="성조기3.png">
+<img id = poseter src="포스터.png">
+<img id = soldiers src="솔져스.png">
+<img id = onestar src="준장.png">
+
+<div id ="box4"></div>
+
+
+<div id ="box42"></div>
+<div id ="box43"></div>
+<div id ="box44"></div>
+
+<div id= "fourtext"> 9년후 </div>
+<div id= "fourtexttwo"> 나는 성인이 되었고, 의대에 입학하게 되었다. 꽤나 평안한
+삶의 연속이였다. </div>
+
+<div id= "fourtextthr"> 하지만 1942년 12월 7일, 일본의 진주만 공습으로
+미국도 2차대전에 참전하게 되었는데 </div>
+
+<div id= "fourtextfr"> 동네의 친구들, 친형마저도 2차대전에 참전하게 됨으로서, 양심적 병역거부자인 나도 가족과 나라를 지키기위해 집총을 하지않는 상태로 입대를 원하게 되었다. </div>
+
+<div id= "fourtextfive"> 하지만 군 관계자들은 집총을 하지 않는 나를 달갑게 보지 않았다. 그리하여 논란이 커질때, 나의 약혼녀의 아버님(준장)께 부탁하게된다. </div>
+
+
+
+
+<img id = blackfive src="검정.png">
+<img id= wind src="검정먼지.png">
+<img id= running src="하얀솔져달리다.png">
+<img id= start src="스타트.png">
+<img id= startziz src="스타트지직.png">
+<img id= startzizz src="스타트지직.png">
+<img id= onecar1 src="동화막1.jpg">
+<img id= onecar2 src="동화막2.jpg">
+<img id= onecar3 src="동화막3.jpg">
+<img id= onecar4 src="동화막4.jpg">
+<img id= onecar5 src="동화막5.jpg">
+<img id= onecar6 src="동화막6.jpg">
+
+
+<div id ="box5"></div>
+
+
+
+
+<div id= "fivetext"> 약혼녀의 아버님의 힘을 빌려, 나는 의무병으로 입대하는데 성공한다.
+그러나 입대 뒤에 더 큰 시련이 나를 기다리고 있었다. </div>
+
+<div id= "f"> <a  href= file:///C:/Users/user/Desktop/%EC%9B%94%EB%94%94%ED%8D%BC%EC%BD%94%EB%94%A9/%EB%8F%99%ED%99%941203/%EA%B2%8C%EC%9E%84%EC%8B%9C%ED%80%80%EC%8A%A4/hawaii%EC%9D%B4%EC%9D%8C%EC%83%88.html
+        >다음장다음장다음장<br>다음장다음장다음장다음장<br>다음장다음장 </div>
+
+
+<script type="text/javascript">
+
+	cloud.onclick=function(){
+		box.style.width="300px"
+		ftext.style.fontSize="40px"}
+
+			ftext.onclick=function(){
+		
+		grass.style.animationPlayState="paused"
+		grass.style.left="-120%"
+		cloud.style.animationPlayState="paused"
+		cloud.style.left="-120%"
+		house.style.left="-120%"
+		box.style.left="-120%"
+		ftext.style.fontSize="0px"
+     ftext.style.width="0px"
+		stext.style.animationPlayState="running"
+		boxx.style.animationPlayState="running"
+		rightarm.style.animationPlayState="running"
+		leftarm.style.animationPlayState="running"
+	}
+
+	stext.onclick=function(){
+		
+	stext.style.animationPlayState="paused"
+	stext.style.width="0px"
+			
+	boxx.style.width="0px"
+	boxx.style.height="0px"
+
+		
+		
+		rightarm.style.animationPlayState="paused"
+		leftarm.style.animationPlayState="paused"
+		cry.style.animationPlayState="running"
+		box3.style.animationPlayState="running"
+		thitext.style.animationPlayState="running"
+		bro.style.animationPlayState="running"
+
+havan.style.top="-120%"
+		havanba.style.top="-120%"
+		rightarm.style.top="-120%"
+		leftarm.style.top="-120%"
+		
+	}
+
+	thitext.onclick=function(){
+		thitexttwo.style.animationPlayState="running"
+		box3.style.width="0px"
+		box3.style.height="0px"
+		thitext.style.width="0px"
+	}
+
+	thitexttwo.onclick=function(){
+		cry.style.animationPlayState="paused"
+
+		cry.style.width="0px"
+		
+		bro.style.width="0px"
+		bro.style.height="0px"
+		thitexttwo.style.width="0px"
+		fourtext.style.animationPlayState="running"
+	}
+
+
+
+
+
+
+
+cpblack.onclick=function(){
+		cpblack.style.opacity=0;
+		cpblack.style.top="-120%"
+		fourtexttwo.style.animationPlayState="running"
+		box4.style.animationPlayState="running"
+	}
+
+	fourtexttwo.onclick=function(){
+		fourtexttwo.style.width="0px"
+		box4.style.width="0px"
+		box4.style.height="0px"
+		
+		pheal.style.zIndex= 11;
+		pheal.style.opacity= 1;
+
+		cp.style.opacity=0;
+
+
+		fourtexttwo.style.animationPlayState="running"
+		fourtextthr.style.animationPlayState="running"
+		box42.style.animationPlayState="running"
+	}
+
+	fourtextthr.onclick=function(){
+	
+		box42.style.width="0px"
+		box42.style.height="0px"
+		fourtextthr.style.width="0px"
+
+
+		pheal.style.animationPlayState="running"
+		brain.style.left="0%"
+		usa.style.left="0%"
+		usa2.style.left="0%"
+		usa3.style.left="0%"
+		poseter.style.animationPlayState="running"
+		fourtextfr.style.animationPlayState="running"
+		box43.style.animationPlayState="running"
+
+	}
+
+	fourtextfr.onclick=function(){
+
+		usa.style.width="0px"
+		usa2.style.width="0px"
+		usa3.style.width="0px"
+		poseter.style.top="-120%"
+         cp.style.top="120%"
+
+		fourtextfr.style.width="0px"
+		box43.style.width="0px"
+		box43.style.height="0px"
+		pheal.style.left="120%"
+		soldiers.style.animationPlayState="running"
+		box44.style.animationPlayState="running"
+		fourtextfive.style.animationPlayState="running"
+		onestar.style.animationPlayState="running"
+		onestar.style.left="0%"
+	}
+
+	fourtextfive.onclick=function(){
+		fourtextfive.style.width="0px"
+		box44.style.width="0px"
+		box44.style.height="0px"
+		onestar.style.transitionDelay="2s"
+		onestar.style.left="-120%"
+		brain.style.transitionDelay="1s"
+		brain.style.left="120%"
+		cpback.style.top="-120%"
+    wind.style.animationPlayState="running"
+    fivetext.style.animationPlayState="running"
+	}
+
+fivetext.onclick=function(){
+  fivetext.style.height="0px"
+  wind.style.animationPlayState="paused"
+  wind.style.transitionDelay="0.5s"
+  wind.style.left="-200%"
+   running.style.transitionDelay="0.3s"
+  running.style.left="-120%"
+  start.style.opacity=1
+  start.style.zIndex=100
+  start.style.animationPlayState="running"
+  startziz.style.top="0%"
+  startziz.style.animationPlayState="running"
+  startziz.style.zIndex=8;
+    startzizz.style.top="0%"
+  startzizz.style.animationPlayState="running"
+startzizz.style.zIndex=8;
+onecar1.style.animationPlayState="running"
+onecar2.style.animationPlayState="running"
+onecar3.style.animationPlayState="running"
+onecar4.style.animationPlayState="running"
+onecar5.style.animationPlayState="running"
+onecar6.style.animationPlayState="running"
+f.style.animationPlayState="running"
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+<a  href= "file:///C:/Users/user/Desktop/%EC%9B%94%EB%94%94%ED%8D%BC%EC%BD%94%EB%94%A9/1119%EC%98%81%EC%84%A0/tatakai3.html">
+</body>
+</html>
